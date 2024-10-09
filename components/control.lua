@@ -17,6 +17,7 @@ function Control:update(entity,dt)
         if love.keyboard.isDown('s') then vy = vy + self.speed end
         if love.keyboard.isDown('d') then vx = vx + self.speed end
         physics.body:setLinearVelocity(vx,vy)
+        print(vx..' / '..vy)
     end
 end
 
